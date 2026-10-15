@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="RecruitZero LinkedIn post review copy">
+  <title>RecruitZero — LinkedIn Post Review</title>
+  <style>
+    :root {
+      --ink: #121820;
+      --muted: #5f6873;
+      --paper: #f4f1e9;
+      --surface: #fffdf8;
+      --line: #d9d4c9;
+      --accent: #ef5b2a;
+      --navy: #152535;
+      --max: 1120px;
+    }
+    * { box-sizing: border-box; }
+    html { color-scheme: light; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.65;
+    }
+    button, a { font: inherit; }
+    a { color: #245a76; text-underline-offset: 3px; }
+    .topbar {
+      background: var(--navy);
+      color: white;
+      border-bottom: 4px solid var(--accent);
+    }
+    .topbar-inner {
+      max-width: var(--max);
+      margin: auto;
+      min-height: 68px;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .status {
+      font: 700 12px/1 Arial, Helvetica, sans-serif;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.3);
+      padding: 9px 11px;
+      border-radius: 999px;
+    }
+    main {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 46px auto 72px;
+    }
+    .intro {
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(240px, .7fr);
+      gap: 48px;
+      align-items: end;
+      margin-bottom: 28px;
+    }
+    h1 {
+      font-size: clamp(38px, 6vw, 76px);
+      line-height: .98;
+      letter-spacing: -.045em;
+      max-width: 850px;
+      margin: 0 0 18px;
+      text-wrap: balance;
+    }
+    .dek {
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 19px;
+      margin: 0;
+    }
+    .review-note {
+      border-top: 2px solid var(--ink);
+      padding-top: 14px;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+    .cover-frame {
+      margin: 32px 0 42px;
+      background: #0b1117;
+      border: 1px solid #0b1117;
+      box-shadow: 0 18px 50px rgba(20, 28, 35, .18);
+    }
+    .cover-frame img { display: block; width: 100%; height: auto; }
+    .content-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 64px;
+      align-items: start;
+    }
+    article {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      padding: clamp(26px, 5vw, 58px);
+      box-shadow: 0 8px 24px rgba(20, 28, 35, .07);
+    }
+    article h2, aside h2 {
+      margin: 0 0 22px;
+      font: 800 13px/1.2 Arial, Helvetica, sans-serif;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .post {
+      font-size: clamp(18px, 2.1vw, 22px);
+      line-height: 1.62;
+    }
+    .post p:first-child {
+      font-size: clamp(25px, 3vw, 36px);
+      line-height: 1.18;
+      letter-spacing: -.02em;
+      margin-top: 0;
+    }
+    .post ul { padding-left: 1.15em; }
+    .post li { margin: 14px 0; padding-left: 6px; }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 34px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+    }
+    .button {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--ink);
+      background: var(--ink);
+      color: white;
+      padding: 10px 16px;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 3px;
+      font: 700 14px/1 Arial, Helvetica, sans-serif;
+    }
+    .button.secondary { background: transparent; color: var(--ink); }
+    .button:focus-visible, a:focus-visible { outline: 3px solid #f8b24c; outline-offset: 3px; }
+    aside {
+      position: sticky;
+      top: 24px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .panel {
+      border-top: 2px solid var(--ink);
+      padding: 20px 0 28px;
+    }
+    .panel + .panel { border-top-color: var(--line); }
+    .panel p, .panel li { color: var(--muted); font-size: 15px; }
+    .panel ol, .panel ul { padding-left: 20px; }
+    .panel li { margin: 10px 0; }
+    .source-list { list-style: none; padding: 0 !important; }
+    .source-list li { margin: 0 0 16px; }
+    .source-list a { font-weight: 700; }
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translate(-50%, 20px);
+      background: var(--navy);
+      color: white;
+      padding: 12px 16px;
+      border-radius: 4px;
+      font: 700 14px/1.2 Arial, Helvetica, sans-serif;
+      opacity: 0;
+      pointer-events: none;
+      transition: .2s ease;
+    }
+    .toast.show { opacity: 1; transform: translate(-50%, 0); }
+    footer {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 24px 42px;
+      color: var(--muted);
+      font: 13px/1.5 Arial, Helvetica, sans-serif;
+    }
+    @media (max-width: 800px) {
+      main { margin-top: 30px; }
+      .intro, .content-grid { grid-template-columns: 1fr; gap: 26px; }
+      .review-note { max-width: 520px; }
+      aside { position: static; }
+      article { padding: 25px 22px; }
+      .topbar-inner { align-items: flex-start; flex-direction: column; gap: 8px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { scroll-behavior: auto !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">RecruitZero</div>
+      <div class="status">External review copy · Not published</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div>
+        <h1>Should marketers rethink how they earn algorithmic attention?</h1>
+        <p class="dek">A proposed LinkedIn post about Facebook’s user-controlled recommendation settings—presented with its cover image for external review.</p>
+      </div>
+      <div class="review-note"><strong>Reviewer brief:</strong> assess the hook, clarity, credibility, usefulness, and whether the visual fits the argument.</div>
+    </section>
+
+    <figure class="cover-frame">
+      <img src="cover.png" alt="Editorial illustration representing a person steering and tuning a social-media recommendation system">
+    </figure>
+
+    <div class="content-grid">
+      <article>
+        <h2>Proposed LinkedIn post</h2>
+        <div class="post" id="postText">
+          <p>Facebook just gave people a steering wheel for its recommendation engine. Marketers should pay attention.</p>
+
+          <p>Meta’s new “Your Algorithm” controls let users tell Facebook what they want to see more or less of across Feed and Reels. People can also set temporary topic interests, and Facebook says those choices will directly shape future recommendations.</p>
+
+          <p>This is bigger than a settings update. It is another step away from passive, black-box feeds and toward recommendation systems that users can actively train.</p>
+
+          <p>For marketers, that changes the job:</p>
+
+          <ul>
+            <li><strong>Specificity beats broad reach.</strong> If users can explicitly choose topics, generic content becomes easier to tune out. Clear subject matter and a recognizable point of view matter more.</li>
+            <li><strong>Audience intent gets more visible.</strong> Topic controls can create stronger interest clusters, giving relevant content a better chance to find the right people—not merely the largest audience.</li>
+            <li><strong>Creative fatigue gets punished faster.</strong> “Not interested” is becoming a direct product input. Repetitive formats and bait-and-switch hooks may lose distribution more quickly.</li>
+          </ul>
+
+          <p>The takeaway: don’t build a content strategy around pleasing an algorithm you cannot see. Build one around being chosen by the people who can now help train it.</p>
+
+          <p>If your audience could directly tune your brand in or out, what would make them ask for more?</p>
+        </div>
+        <div class="actions">
+          <button class="button" id="copyButton" type="button">Copy post text</button>
+          <a class="button secondary" href="cover.png" download>Download cover</a>
+        </div>
+      </article>
+
+      <aside>
+        <section class="panel">
+          <h2>Review questions</h2>
+          <ol>
+            <li>Does the opening earn your attention?</li>
+            <li>Is the analysis clear and credible?</li>
+            <li>Are the practical implications useful?</li>
+            <li>Does the cover fit the subject and tone?</li>
+            <li>What would you shorten or strengthen?</li>
+          </ol>
+        </section>
+
+        <section class="panel">
+          <h2>Sources</h2>
+          <ul class="source-list">
+            <li><a href="https://about.fb.com/news/2026/10/introducing-your-algorithm-facebook/" target="_blank" rel="noopener">Meta: Introducing Your Algorithm</a></li>
+            <li><a href="https://techcrunch.com/2026/10/13/facebook-is-giving-users-more-control-over-their-algorithm/" target="_blank" rel="noopener">TechCrunch: Facebook gives users more control</a></li>
+            <li><a href="https://www.contentgrip.com/facebook-your-algorithm-controls/" target="_blank" rel="noopener">ContentGrip: Recommendation tuning rollout</a></li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer>Prepared for external review. This draft has not been published to LinkedIn.</footer>
+  <div class="toast" id="toast" role="status" aria-live="polite">Post copied to clipboard</div>
+
+  <script>
+    const copyButton = document.getElementById('copyButton');
+    const toast = document.getElementById('toast');
+    copyButton.addEventListener('click', async () => {
+      const text = document.getElementById('postText').innerText.trim();
+      try {
+        await navigator.clipboard.writeText(text);
+        toast.textContent = 'Post copied to clipboard';
+      } catch (error) {
+        toast.textContent = 'Select the post text and copy manually';
+      }
+      toast.classList.add('show');
+      window.setTimeout(() => toast.classList.remove('show'), 2200);
+    });
+  </script>
+</body>
+</html>
